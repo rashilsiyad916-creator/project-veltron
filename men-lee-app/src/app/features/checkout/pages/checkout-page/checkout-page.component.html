@@ -1,0 +1,33 @@
+<h2>checkout</h2>
+
+<div class="checkout-container">
+
+
+    <!--order summary-->
+    <div class="summary">
+        <h3>order summary</h3>
+
+        <div *ngFor="let item of cartItems">
+           <p>{{ item.name }} × {{ item.quantity }}</p>
+           <p>₹ {{ item.price * item.quantity }}</p>
+           <hr/>
+        </div>
+
+          <h3>Total: ₹ {{ total }}</h3>
+
+    </div>
+
+    <!--Address form-->
+<form [formGroup]="form" (ngSubmit)="placeOrder()" class="address-form">
+
+    <h3>Shipping Details</h3>
+
+    <input placeholder="Full Name" formControlName="fullName"/>
+    <input placeholder="Address" formControlName="address"/>
+    <input placeholder="City" formControlNamme="city"/>
+    <input placeholder="Pincode" formControlName="pincode"/>
+
+    <button type="submit">Place Order</button>
+</form>
+
+</div>

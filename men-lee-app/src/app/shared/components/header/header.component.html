@@ -1,0 +1,15 @@
+<header class="header">
+
+  <div class="logo" routerLink="/products">
+    ⚽ Football Store
+  </div>
+
+  <nav>
+    <a routerLink="/products">Products</a>
+    <a routerLink="/cart">
+      Cart <span class="badge">{{ cartCount }}</span>
+    </a>
+    <a (click)="logout()">Logout</a>
+  </nav>
+
+</header>

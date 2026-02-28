@@ -1,0 +1,17 @@
+.result {
+  text-align: center;
+  margin-top: 100px;
+}
+
+.success h2 { color: green; }
+.failure h2 { color: crimson; }
+
+button {
+  margin-top: 15px;
+  padding: 10px 15px;
+  border: none;
+  background: #4f46e5;
+  color: white;
+  border-radius: 6px;
+  cursor: pointer;
+}

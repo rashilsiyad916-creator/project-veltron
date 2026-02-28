@@ -1,0 +1,34 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 25px;
+  background: #0f172a;
+  color: white;
+}
+
+.logo {
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+nav a {
+  margin-left: 15px;
+  cursor: pointer;
+  text-decoration: none;
+  color: white;
+  position: relative;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+.badge {
+  background: crimson;
+  padding: 2px 6px;
+  border-radius: 10px;
+  font-size: 12px;
+  margin-left: 5px;
+}

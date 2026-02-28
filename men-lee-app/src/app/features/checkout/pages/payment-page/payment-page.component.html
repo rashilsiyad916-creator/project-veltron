@@ -1,0 +1,23 @@
+
+<h2>Select Payment Method</h2>
+
+<div class="payment-box">
+
+  <label>
+    <input type="radio" value="cod" [(ngModel)]="selectedMethod" />
+    Cash on Delivery
+  </label>
+
+  <label>
+    <input type="radio" value="card" [(ngModel)]="selectedMethod" />
+    Credit / Debit Card
+  </label>
+
+  <label>
+    <input type="radio" value="upi" [(ngModel)]="selectedMethod" />
+    UPI Payment
+  </label>
+
+  <button (click)="payNow()">Pay Now</button>
+
+</div>
